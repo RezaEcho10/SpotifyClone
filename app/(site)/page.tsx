@@ -1,8 +1,9 @@
-export default async function Home() {
+import Header from "@/Components/Header";
 
+export default async function Home() {
   return (
-	<div>
-		fldfldlfl
-       </div>
+    <div className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
+      <Header></Header>
+    </div>
   )
 }

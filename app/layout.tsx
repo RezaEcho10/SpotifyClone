@@ -1,6 +1,5 @@
-
+import SideBar from '@/Components/SideBar'
 import './globals.css'
-
 
 export default async function RootLayout({
   children,
@@ -11,12 +10,10 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body>
-        
-            
-              {children}
-            
-        
+      <body> 
+        <SideBar>   
+          {children}
+        </SideBar>
       </body>
     </html>
   )
